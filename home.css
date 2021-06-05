@@ -145,10 +145,38 @@ body {
 }
 
 .column {
-  float: left;
   height: auto;
-  width: 400px !important;
-  padding: 2rem !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90% !important;
+  max-width: 300px;
+}
+
+
+.slick-slide>div {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .slick-slide>div {
+    margin: 2rem 1rem;
+  }
+
+  .column {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slick-slide>div {
+    margin: 4rem 1rem;
+  }
+
+  .column {
+    max-width: 800px;
+  }
 }
 
 .shape2 {
@@ -160,13 +188,7 @@ body {
 
 
 .row {
-  padding: 0 50px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-grid;
-  grid-row-gap: 10px;
-  gap: 30px;
-  grid-template-columns: repeat(9, 290px);
+  width: 100%;
   background-color: #F5F5F5;
 }
 
